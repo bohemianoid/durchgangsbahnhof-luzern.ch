@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  php:
+    build: ./php/5.6
+    # build: ./php/7.0
+    ports:
+      - 80:80
+    volumes:
+      - ./wordpress:/var/www/html
+
+  mysql:
+    image: mysql:5
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./initdb.d:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+    command: --sql_mode=""
