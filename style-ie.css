@@ -1,0 +1,76 @@
+/*
+Theme Name: Durchgangsbahnhof Luzern - die Alternative IE
+Theme URI: http://durchgangsbahnhof-luzern.ch/
+Description: Projekt Website der alternativen Lösung Durchgangsbahnhof Luzern
+Author: Simon Roth
+Author URI: http://simonroth.ch/
+Version: 2.2
+Tags: 
+
+License:
+License URI:
+
+
+*/
+
+
+
+.clearfix {
+	*zoom: 1;
+}
+
+.page a {
+	background: rgb( 255, 237, 169 );
+}
+
+header #titlebar {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000008,endColorstr=#BF000008)"; /* IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000008,endColorstr=#BF000008); /* IE6 & 7 */
+	zoom: 1;
+}
+
+header .page nav ul li.last-child {
+	margin-right: 0;
+}
+
+section#project ul li.last-child {
+	margin-right: 0;
+}
+
+aside ul li.last-child {
+	margin-bottom: 0;
+}
+
+aside ul li ul li.last-child {
+	margin-bottom: 0;
+}
+
+section#opinion #comment-form input[type=text],
+section#opinion #comment-form input[type=email],
+section#opinion #comment-form textarea,
+#recommend-inline #recommend-form input[type=text],
+#recommend-inline #recommend-form input[type=email] {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D8FFEDA9,endColorstr=#D8FFEDA9)"; /* IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D8FFEDA9,endColorstr=#D8FFEDA9); /* IE6 & 7 */
+	zoom: 1;
+}
+
+section#opinion #comment-form input[type=text]:focus,
+section#opinion #comment-form input[type=email]:focus,
+section#opinion #comment-form textarea:focus,
+#recommend-inline #recommend-form input[type=text]:focus,
+#recommend-inline #recommend-form input[type=email]:focus {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFEDA9,endColorstr=#7FFFEDA9)"; /* IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFFEDA9,endColorstr=#7FFFEDA9); /* IE6 & 7 */
+	zoom: 1;
+}
+
+#back-to-top {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D8FFEDA9,endColorstr=#D8FFEDA9)"; /* IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D8FFEDA9,endColorstr=#D8FFEDA9); /* IE6 & 7 */
+	zoom: 1;
+}
