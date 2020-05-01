@@ -4,7 +4,7 @@
   "repository": "github:simonroth/durchgangsbahnhof-luzern.ch",
   "scripts": {
     "start": "parcel source/index.html",
-    "build": "parcel build source/index.html -d ."
+    "build": "parcel build --public-url '.' source/index.html -d ."
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
