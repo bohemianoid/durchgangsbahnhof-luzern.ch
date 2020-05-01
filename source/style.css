@@ -1,0 +1,566 @@
+/*
+Theme Name: Durchgangsbahnhof Luzern - die Alternative
+Theme URI: http://durchgangsbahnhof-luzern.ch/
+Description: Projekt Website der alternativen Lösung Durchgangsbahnhof Luzern
+Author: Simon Roth
+Author URI: http://simonroth.ch/
+Version: 2.3
+Tags: 
+
+License:
+License URI:
+
+
+*/
+
+
+
+/**
+* 1.0 css reset
+*
+* reset standard browser css
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/**
+* 1.1 webfonts
+*
+* include webfonts
+*/
+
+@font-face {
+	font-family: 'Listicons';
+	src: url('webfonts/listicons-webfont.eot');
+	src: url('webfonts/listicons-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/listicons-webfont.woff') format('woff'),
+		 url('webfonts/listicons-webfont.ttf') format('truetype'),
+		 url('webfonts/listicons-webfont.svg#ListiconsGlyphsRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/**
+* 2.1 global
+*
+* css of main layout
+*/
+
+body {
+	background: rgb( 255, 255, 255 );
+	color: rgb( 0, 0, 8 );
+	font: 13px/18px Verdana, sans-serif;
+}
+
+#container {
+	float: left;
+	width: 100%;
+}
+
+header,
+#titlebar,
+section,
+footer {
+	float: left;
+	width: inherit;
+}
+
+hgroup,
+.page {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
+hgroup a,
+.page a {
+	background: rgba( 255, 237, 169, 0.85 );
+	color: rgb( 0, 0, 8 );
+	cursor: pointer;
+	font: italic 13px/18px Georgia, serif;
+	padding: 4px;
+	text-decoration: none;
+}
+
+hgroup a:hover,
+.page a:hover {
+	text-decoration: none;
+}
+
+section#project {
+	float: left;
+	margin: 0 48px 0 0;
+	width: 576px;
+}
+
+aside {
+	float: left;
+	width: 336px;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+
+/**
+* 2.2 header
+*
+* css of header layout
+*/
+
+header {
+	background: url( 'img/header.jpg' ) center center no-repeat;
+	background-size: cover;
+}
+
+header #titlebar {
+	background: rgba( 0, 0, 8, 0.55 );
+	margin: 96px 0 0 0;
+}
+
+header #titlebar hgroup {
+	margin: 24px auto;
+}
+
+h1 {
+	color: rgb( 255, 237, 169 );
+	font: bold 64px Verdana, sans-serif;
+}
+
+h2 {
+	color: rgb( 255, 255, 255 );
+	font: italic 64px Georgia, serif;
+}
+
+header .page nav {
+	float: left;
+	margin: 48px 0 144px 0;
+	width: inherit;
+}
+
+header .page nav ul {
+	float: right;
+}
+
+header .page nav ul li {
+	float: left;
+	margin: 0 48px 0 0;
+}
+
+header .page nav ul li:last-child {
+	margin-right: 0;
+}
+
+header .page nav ul li a {
+	display: block;
+	font: italic 32px Georgia, serif;
+	padding: 8px 16px;
+}
+
+
+
+/**
+* 2.3 project
+*
+* css of project layout
+*/
+
+section#project {
+	padding: 48px 0 0 0;
+}
+
+h3 {
+	border-bottom: 2px solid rgb( 0, 0, 8 );
+	font: italic 32px Georgia, serif;
+	margin: 0 0 16px 0;
+	padding: 0 0 4px 0;
+}
+
+p {
+	clear: left;
+	margin: 0 0 16px 0;
+}
+
+section#project ul {
+	float: left;
+	width: inherit;
+}
+
+section#project ul.presentations {
+	margin: 48px 0 0 0;
+}
+
+section#project ul.recommend {
+	margin: 24px 0 0 0;
+}
+
+section#project ul li {
+	float: left;
+	margin: 0 48px 0 0;
+	width: 264px;
+}
+
+section#project ul li:last-child {
+	margin-right: 0;
+}
+
+section#project ul li a {
+	box-shadow: 0 2px 2px rgb( 0, 0, 8 );
+	display: block;
+	font: italic 18px Georgia, serif;
+	padding: 8px 16px;
+	position: relative;
+}
+
+section#project ul.presentations li a {
+	background: rgb(0, 0, 8 );
+	color: rgb( 255, 255, 255 );
+}
+
+section#project ul li a:after {
+	font: 36px 'Listicons';
+	margin-top: -2px;
+	position: absolute;
+	right: 0;
+}
+
+section#project ul.presentations li a:after {
+	content: 'Q';
+}
+
+section#project ul.recommend li a:after {
+	content: 's';
+}
+
+
+
+/**
+* 2.4 aside
+*
+* css of aside layout
+*/
+
+aside {
+	padding: 48px 0 0 0;
+}
+
+aside ul,
+aside ul li ul {
+	float: left;
+	width: inherit;
+}
+
+aside ul li {
+	float: left;
+	margin: 0 0 48px 0;
+	width: inherit;
+}
+
+aside ul li:last-child {
+	margin-bottom: 0;
+}
+
+aside ul li ul li {
+	font: italic 13px/18px Georgia, serif;
+	margin: 0 0 16px 0;
+}
+
+aside ul li ul li:last-child {
+	margin-bottom: 0;
+}
+
+
+
+/**
+* 2.5 opinions
+*
+* css of opinions layout
+*/
+
+section#opinions {
+	margin: 96px 0 0 0;
+	padding: 48px 0 0 0;
+}
+
+section#opinions #masonry {
+	float: left;
+	width: inherit;
+}
+
+section#opinions article {
+	float: left;
+	margin: 0 48px 48px 0;
+	width: 432px;
+}
+
+section#opinions article h4 {
+	background: rgb( 0, 0, 8 );
+	color: rgb( 255, 255, 255 );
+	float: left;
+	font: 13px/18px Verdana, sans-serif;
+	margin: 0 0 8px 0;
+	padding: 2px 4px;
+}
+
+section#opinions article p,
+section#opinions article p a {
+	font: italic 18px/150% Georgia, serif;
+}
+
+section#opinions article p strong {
+	font-weight: bold;
+}
+
+section#opinions #comment-sent,
+#recommend-sent {
+	background: rgb( 237, 255, 169 );
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9998;
+}
+
+#recommend-sent {
+	z-index: 9999;
+}
+
+section#opinions #comment-sent .page p,
+#recommend-sent .page p {
+	margin: 0;
+	padding: 8px 0;
+}
+
+
+
+/**
+* 2.6 opinion
+*
+* css of opinion layout
+*/
+
+section#opinion {
+	margin: 48px 0 0 0;
+	padding: 48px 0 0 0;
+}
+
+section#opinion #comment-form,
+#recommend-inline #recommend-form {
+	float: left;
+}
+
+section#opinion #comment-form #author-data,
+#recommend-inline #recommend-form #recommend-data {
+	float: left;
+	margin: 0 48px 0 0;
+	width: 336px;
+}
+
+section#opinion #comment-form #comment-data {
+	float: left;
+	width: 576px;
+}
+
+section#opinion #comment-form label,
+#recommend-inline #recommend-form label {
+	float: left;
+	font: italic 13px/18px Georgia, serif;
+	margin: 16px 0 4px 0;
+	width: inherit;
+}
+
+section#opinion #comment-form label span,
+#recommend-inline #recommend-form label span {
+	color: rgb( 255, 0, 0 );
+}
+
+section#opinion #comment-form label.required,
+#recommend-inline #recommend-form label.required {
+	font: 13px/18px Verdana, sans-serif;
+}
+
+section#opinion #comment-form label.error,
+#recommend-inline #recommend-form label.error {
+	color: rgb( 255, 0, 0 );
+	font: 13px/18px Verdana, sans-serif;
+	margin: 0;
+}
+
+section#opinion #comment-form input[type=text],
+section#opinion #comment-form input[type=email],
+section#opinion #comment-form textarea,
+#recommend-inline #recommend-form input[type=text],
+#recommend-inline #recommend-form input[type=email] {
+	background: rgba( 255, 237, 169, 0.85 );
+	border: none;
+	float: left;
+	padding: 8px;
+	
+	-webkit-transition: background 0.4s ease-in-out;
+	-moz-transition: background 0.4s ease-in-out;
+	-o-transition: background 0.4s ease-in-out;
+	-ms-transition: background 0.4s ease-in-out;
+	transition: background 0.4s ease-in-out;
+}
+
+section#opinion #comment-form #author-data input[type=text],
+section#opinion #comment-form #author-data input[type=email],
+#recommend-inline #recommend-form #recommend-data input[type=text],
+#recommend-inline #recommend-form #recommend-data input[type=email] {
+	outline: none;
+	width: 320px;
+}
+
+section#opinion #comment-form #comment-data textarea {
+	outline: none;
+	width: 560px;
+	height: 258px;
+}
+
+section#opinion #comment-form input[type=text]:focus,
+section#opinion #comment-form input[type=email]:focus,
+section#opinion #comment-form textarea:focus,
+#recommend-inline #recommend-form input[type=text]:focus,
+#recommend-inline #recommend-form input[type=email]:focus {
+	background: rgba( 255, 237, 169, 0.5 );
+}
+
+section#opinion #comment-form input[type=submit],
+#recommend-inline #recommend-form input[type=submit] {
+	background: rgb( 0, 0, 8 );
+	border: none;
+	box-shadow: 0 2px 2px rgb( 0, 0, 8 );
+	color: rgb( 255, 255, 255 );
+	cursor: pointer;
+	float: left;
+	font: italic 13px/18px Georgia, serif;
+	margin: 16px 0 0 0;
+	padding: 8px;
+}
+
+
+/**
+* 2.7 footer
+*
+* css of footer layout
+*/
+
+footer {
+	margin: 48px 0;
+}
+
+section#copyright {
+	float: right;
+	margin: 48px 0 0 0;
+	width: auto;
+}
+
+#back-to-top {
+	display: block;
+	margin: 0 0 -8px -40px;
+	padding: 8px;
+	position: fixed;
+	bottom: 48px;
+}
+
+footer #slide-toggle {
+	background: rgb( 0, 0, 8 );
+}
+
+section#third-party {
+	color: rgb( 255, 255, 255 );
+	padding: 48px 0;
+}
+
+section#third-party h3 {
+	border-color: rgb( 255, 255, 255 );
+}
+
+section#third-party ul,
+section#third-party ul li {
+	float: left;
+	width: inherit;
+}
+
+section#third-party li {
+	margin: 0 0 8px 0;
+}
+
+section#third-party li:last-child {
+	margin-bottom: 0;
+}
+
+
+/**
+* 2.8 recommend
+*
+* css of recommend layout
+*/
+
+#recommend-inline {
+	color: rgb( 0, 0, 8 );
+	display: none;
+	float: left;
+	width: inherit;
+}
+
+#recommend-inline #recommend-form #recommend-data {
+	width: 480px;
+	margin: 0;
+}
+
+#recommend-inline #recommend-form #recommend-data input[type=text],
+#recommend-inline #recommend-form #recommend-data input[type=email] {
+	width: 464px;
+}
+
+#recommend-inline #recommend-form input[type=submit] {
+	float: right;
+	margin: 32px 0 0 0;
+}
